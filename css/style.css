@@ -1,191 +1,184 @@
 @charset "utf-8"
-
-html {height: 100%;}
-
+*{}
 body {
-    margin: 0;
-    padding: 0;
-    width: 99,9%;
-    height: 100%;
-    color: #333;
-    background: #d9ecf0;
-    font-size: 1em;
-    font-family: "Segoe UI", sans-serif;
-    line-height: 135%;
-}
-
-/* Links */
-a {
-  color: #1b527e;
-  text-decoration: none;
-  transition: all.2s ease;
-  -moz-transition: all.2s ease;
-  -webkit-transition: all.2s ease;
-  -ms-transition: all.2s ease;
-}
-a:hover {
-  color: #615ecd;
-  text-decoration: none;
-  transition: all.2s ease;
-  -moz-transition: all.2s ease;
-  -webkit-transition: all.2s ease;
-  -ms-transition: all.2s ease;
-}
-a:active {color: #1a3571}
-
-img {
-  max-width: 100%;
-  height: auto;
-  width: auto\9;
-}
-
-hr {
-  display: block;
-  border: 0;
-  height: 1px;
-  border-top: 1px solid #538c99;
+  margin: 0;
   padding: 0;
+  color: #333;
+  background: #d9ecf0;
+  font-size: 1em;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 135%;
 }
 
-/* Selection Block */
-::selection {background: #3351bd; color: #fff}
-::-moz-selection {background: #3351bd; color: #fff}
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
 
-header, footer {
-  width: 98%;
-  background-color: #7dbcdf;
-  min-height: 50px;
-  float: left;
-}
+.content {
+    min-height: calc(100vh - 80px);
+  }
 
-/* HEAD */
+  /* Links */
 
-header {
-  padding: 1%;
-  padding-bottom: 0;
-  padding-top: 16px;
-  border-bottom: 2px solid #7779fb;
-}
+  a {
+    color: #1b527e;
+    text-decoration: none;
+    transition: all.2s ease;
+    -moz-transition: all.2s ease;
+    -webkit-transition: all.2s ease;
+    -ms-transition: all.2s ease;
+  }
+  a:hover {
+    color: #89ece9;
+    text-decoration: none;
+    transition: all.2s ease;
+    -moz-transition: all.2s ease;
+    -webkit-transition: all.2s ease;
+    -ms-transition: all.2s ease;
+  }
+  a:active {color: #1a3571}
 
-#logo {
-  font-size: 1.6em;
-}
-#contact {
-  margin-left: 10px;
-  font-size: 1.3em;
-  text-transform: capitalize;
-}
+  img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+  }
 
-input[type=text].field {
-  border-radius: 8px;
-  border: 2px solid #7779fb;
-  padding: 5px;
-  float:right;
-}
-input[type=text].field:focus {border: 2px solid #3b77be;}
+  hr {
+    display: block;
+    border: 0;
+    height: 1px;
+    border-top: 1px solid #538c99;
+    padding: 0;
+  }
 
-.right {float:right;}
-.left {float:left;}
-.clear{clear: both;}
+  /* Selection Block */
+  ::selection {background: #3351bd; color: #fff}
+  ::-moz-selection {background: #3351bd; color: #fff}
 
-#menuHrefs a {
-  padding: 5px;
-  border-radius: 5px;
-  margin-right: 5px;
-  color: #26508e;
-}
-#menuHrefs a:hover {background-color: #9db2dd}
+  header, footer {
+    background-color: #7dbcdf;
+    min-height: 50px;
+    float: left;
+  }
 
-#menu {
-  color: #26508e;
-  font-size: 1.7em;
-}
-#menu hr {
-  color: #26508e;
-  width: 500px;
-  max-width: 100%;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
+  /* HEAD */
 
-/* Main styles for website */
+  header {
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 0;
+    padding-top: 16px;
+    border-bottom: 2px solid #7779fb;
+  }
 
-#wrapper {
-  float: left;
-  width: 100%;
-  margin-top: 20px;
-}
-#wrapper #articles {
-  float: left;
-  width: 70%;
-  margin-left: 15%;
-}
+  #logo {
+    font-size: 1.6em;
+  }
+  #contact {
+    margin-left: 10px;
+    font-size: 1.3em;
+    text-transform: capitalize;
+  }
 
-#wrapper #articles article {
-  float: left;
-  width: 31.3%;
-  min-width: 300px;
-  border:1px solid #4d8dc1;
-  box-sizing: border-box;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  margin-right: 2%;
-  min-height: 400px;
-}
+  input[type=text].field {
+    border-radius: 8px;
+    border: 2px solid #7779fb;
+    padding: 5px;
+    float:right;
+  }
+  input[type=text].field:focus {border: 2px solid #3b77be;}
 
-#wrapper #articles article img {
-  width: 100%;
-  height: 200px;
-  border-radius: 5px 5px 0px 0px;
-  border-bottom: 1px solid #4d8dc1;
-}
+  .right {float:right;}
+  .left {float:left;}
+  .clear{clear: both;}
 
-#wrapper #articles article h3 {
-  width: 90%;
-  margin-left: 5%;
-  font-weight: normal;
-  font-size: 1.5em;
-}
+  #menuHrefs a {
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: #26508e;
+  }
+  #menuHrefs a:hover {background-color: #9db2dd}
 
-#wrapper #articles article p {
-  width: 80%;
-  margin-left: 10%;
-  text-indent: 1em;
-}
+  #menu {
+    color: #26508e;
+    font-size: 1.7em;
+  }
+  #menu hr {
+    color: #26508e;
+    width: 500px;
+    max-width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
 
-#wrapper #articles article a {
-  padding: 5px;
-  border-radius: 5px;
-  margin-left: 5%;
-  color: #282a34;
-  float: left;
-  margin-bottom: 5%;
-}
-#wrapper #articles article a:hover {
-  background-color: #507a96;
-  color: #ffffff;
-  transition: all.2s ease;
-}
+  /* Main styles for website */
 
-#page-wrap:after {
-  content: "";
-  display: block;
-}
+  #block {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+  }
+  #block #articles {
+    float: left;
+    width: 70%;
+    margin-left: 15%;
+  }
 
-footer, #page-wrap:after {height: 10px}
+  #block #articles article {
+    float: left;
+    width: 31.3%;
+    min-width: 300px;
+    border:1px solid #4d8dc1;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-right: 2%;
+    min-height: 400px;
+  }
 
-#page-wrap {
-  min-height: 100%;
-  margin-bottom: -10px;
-}
+  #block #articles article img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid #4d8dc1;
+  }
 
-/* FOOTER */
+  #block #articles article h3 {
+    width: 90%;
+    margin-left: 5%;
+    font-weight: normal;
+    font-size: 1.5em;
+  }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  padding: 1%;
-  border-top: 2px solid #7779fb;
-  margin-top: 10px;
-}
-footer img {width: 30px; margin-right: 5px}
+  #block #articles article p {
+    width: 80%;
+    margin-left: 10%;
+    text-indent: 1em;
+  }
+
+  #block #articles article a {
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5%;
+    color: #282a34;
+    float: left;
+    margin-bottom: 5%;
+  }
+  #block #articles article a:hover {
+    background-color: #507a96;
+    color: #ffffff;
+    transition: all.2s ease;
+  }
+
+  footer {
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 96%;
+    height: 78px;
+    border-top: 2px solid #7779fb;
+  }
+  footer img {width: 30px; margin-right: 5px}
