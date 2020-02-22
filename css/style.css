@@ -95,30 +95,24 @@ input {
 input:focus {border: 2px solid #2fe2dc;}
 
 form {
-  margin-left: 33%;
+  border: 2px solid silver;
+  width: 40%;
+  margin-left: 30%;
   float: left;
 }
 
-form input {
+form input, form label, form textarea, form #send {
+  display: block;
+  margin: 5px;
   width: 50%;
-  margin: 10px;
-  margin-bottom: 15px;
+  margin-left: 25%;
   float: left;
-  clear: both;
-}
-
-form label {
-  float: left;
-  width: 50%;
-  margin-left: 20px;
-  margin-bottom: -5px;
 }
 
 textarea {
   border-radius: 8px;
   border: 2px solid #7779fb;
   padding: 5px;
-  min-width: 50%;
   clear: both;
   margin: 10px;
   font-size: 1.2em;
@@ -126,15 +120,15 @@ textarea {
 textarea:focus {border: 2px solid #2fe2dc;}
 
 form #send {
-  border: 2px solid #5093b0;
-  margin-left: 50px;
-  background-color: #9bcede;
-  color: #26508e;
+  background-color: #88b1cc;
+  border-radius: 5px;
+  padding: 2%;
   cursor: pointer;
-  width: 250px;
+  width: 40%;
+  margin-left: 30%;
 }
 
-form #send:hover {background-color: #2c6690; color: #bcdde7}
+form #send:hover {border: 2px solid #2966a6; background-color: #c3e5f1; color: #21487c}
 
   .right {float:right;}
   .left {float:left;}
@@ -176,13 +170,35 @@ form #send:hover {background-color: #2c6690; color: #bcdde7}
   #block #articles article {
     float: left;
     width: 31.3%;
-    /*min-width: 300px;*/
     border:1px solid #4d8dc1;
     box-sizing: border-box;
     border-radius: 5px;
     background-color: #f9f9f9;
     margin-right: 2%;
     min-height: 400px;
+  }
+
+/* Adaptation */
+
+  @media (min-width: 700px){
+    #block #articles article {
+      width: 31.3%;
+      margin-right: 2%;}
+  }
+
+  @media (max-width:699px){
+    #block #articles article {
+      width: 100%;
+      margin-bottom: 10px;}
+      body {font-size: 0.5em;}
+      footer a img {width: 10%;}
+      form #send {font-size: 1em}
+      form {width: 80%; margin-left: 10%;}
+      form input, form label, form textarea, form #send {
+        display: block;
+        margin-left: auto;
+        margin-right: auto }
+      form #send {margin-left: 20px;}
   }
 
   #block #articles article img {
@@ -199,7 +215,7 @@ form #send:hover {background-color: #2c6690; color: #bcdde7}
     font-size: 1.5em;
   }
 
-  #block #articles article p, #about_us p, #columnRight p {
+  #block #articles article p, #about_us p, #columnRight p, #art_page p {
     width: 80%;
     margin-left: 10%;
     text-indent: 1em;
@@ -242,6 +258,26 @@ form #send:hover {background-color: #2c6690; color: #bcdde7}
   padding: 1%;
 }
 
+/* Article page */
+
+#art_page img {
+  margin-left: 10%;
+  width: 40%;
+  height: auto;
+  border: 2px solid silver;
+}
+
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 10px 10px 10px 0; /* Отступы вокруг картинки */
+   }
+
+#art_page {
+  height: 50%;
+  width: 80%;
+  margin-left: 10%;
+}
+
 /* Center block og our site */
 
 #main_soc_block {
@@ -258,10 +294,12 @@ form #send:hover {background-color: #2c6690; color: #bcdde7}
 #main_soc_block_in {
   text-align: center;
   padding: 1%;
-  height: 140px;
+  height: 180px;
   background-color: #d9ecf0;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 360px;
+  max-width: 98%;
+  box-sizing: border-box;
 }
 #main_soc_block_in h3 {color: #1b527e; font-size: 1.4em}
 #main_soc_block_in a {
