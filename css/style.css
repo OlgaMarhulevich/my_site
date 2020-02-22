@@ -131,7 +131,7 @@ body {
   #block #articles article {
     float: left;
     width: 31.3%;
-    min-width: 300px;
+    /*min-width: 300px;*/
     border:1px solid #4d8dc1;
     box-sizing: border-box;
     border-radius: 5px;
@@ -173,6 +173,38 @@ body {
     color: #ffffff;
     transition: all.2s ease;
   }
+
+/* Center block og our site */
+
+#main_soc_block {
+  width: 100%;
+  padding: 2% 0;
+  border-bottom: 2px solid silver;
+  border-top: 2px solid silver;
+  margin: 20px 0;
+  float: left;
+  background: url("../img/social.jpg") repeat-x center;
+  height: 180px;
+}
+
+#main_soc_block_in {
+  text-align: center;
+  padding: 1%;
+  height: 140px;
+  background-color: #d9ecf0;
+  border-radius: 5px;
+  width: 360px;
+}
+#main_soc_block_in h3 {color: #1b527e; font-size: 1.4em}
+#main_soc_block_in a {
+  font-size: 1.1em;
+  background-color: #88b1cc;
+  border-radius: 5px;
+  padding: 2%;
+}
+#main_soc_block_in a:hover {border: 1px solid #2966a6; background-color: #c3e5f1; color: #21487c}
+
+/* FOOTER */
 
   footer {
     padding-left: 2%;
