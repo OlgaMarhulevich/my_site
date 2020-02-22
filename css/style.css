@@ -83,13 +83,58 @@ body {
     text-transform: capitalize;
   }
 
-  input[type=text].field {
+/* FORMS */
+
+header input {float:right;}
+
+input {
     border-radius: 8px;
     border: 2px solid #7779fb;
     padding: 5px;
-    float:right;
   }
-  input[type=text].field:focus {border: 2px solid #3b77be;}
+input:focus {border: 2px solid #2fe2dc;}
+
+form {
+  margin-left: 33%;
+  float: left;
+}
+
+form input {
+  width: 50%;
+  margin: 10px;
+  margin-bottom: 15px;
+  float: left;
+  clear: both;
+}
+
+form label {
+  float: left;
+  width: 50%;
+  margin-left: 20px;
+  margin-bottom: -5px;
+}
+
+textarea {
+  border-radius: 8px;
+  border: 2px solid #7779fb;
+  padding: 5px;
+  min-width: 50%;
+  clear: both;
+  margin: 10px;
+  font-size: 1.2em;
+}
+textarea:focus {border: 2px solid #2fe2dc;}
+
+form #send {
+  border: 2px solid #5093b0;
+  margin-left: 50px;
+  background-color: #9bcede;
+  color: #26508e;
+  cursor: pointer;
+  width: 250px;
+}
+
+form #send:hover {background-color: #2c6690; color: #bcdde7}
 
   .right {float:right;}
   .left {float:left;}
@@ -154,7 +199,7 @@ body {
     font-size: 1.5em;
   }
 
-  #block #articles article p {
+  #block #articles article p, #about_us p, #columnRight p {
     width: 80%;
     margin-left: 10%;
     text-indent: 1em;
@@ -173,6 +218,29 @@ body {
     color: #ffffff;
     transition: all.2s ease;
   }
+
+/* Page About Us */
+
+#about_us {
+  width: 62%;
+  float: left;
+  border:1px solid #4d8dc1;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  padding: 1%;
+}
+
+#columnRight {
+  width: 33%;
+  margin-left: 5%;
+  float: left;
+  border:1px solid #4d8dc1;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  padding: 1%;
+}
 
 /* Center block og our site */
 
