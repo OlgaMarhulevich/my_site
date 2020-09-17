@@ -128,7 +128,11 @@ form #send {
   margin-left: 30%;
 }
 
-form #send:hover {border: 2px solid #2966a6; background-color: #c3e5f1; color: #21487c}
+form #send:hover {
+  border: 2px solid #2966a6;
+  background-color: #c3e5f1;
+  color: #21487c;
+}
 
   .right {float:right;}
   .left {float:left;}
